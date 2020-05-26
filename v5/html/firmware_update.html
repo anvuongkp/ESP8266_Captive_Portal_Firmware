@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Firmware Update</title>
+	<style>.container{margin: auto;width: 90%}@media(min-width:1200px){.container{margin: auto;width: 30%}}@media(min-width:768px) and (max-width:1200px){.container{margin: auto;width: 50%}}.h2{font-size: 2em}h1{font-size: 3em}.btn:hover{background: #337AB7}gpio_table{border-collapse: collapse;width: 100%;}th, td {text-align: left;padding: 8px;}tr:nth-child(even){background-color: #f2f2f2}th {background-color: #286090;color: white;}input[type="text"]{border: 1px solid #cccccc;}body{font: 16px sans-serif;}h2{font-size: 2em;}ul.breadcrumb {padding: 10px 16px;list-style: none;background-color: #eee;font-size: 17px;}ul.breadcrumb li {display: inline;}ul.breadcrumb li+li:before {padding: 8px;color: black;content: "/\00a0";}ul.breadcrumb li a {color: #0275d8;text-decoration: none;}ul.breadcrumb li a:hover {color: #01447e;text-decoration: underline;}</style>
+</head>
+<body class="container">
+	<div>
+		<ul class="breadcrumb">
+			<li><a href="/">Home</a></li>
+			<li><a href="#">Firmware Update</a></li>
+		</ul>
+	</div>
+	<div><h2>Firmware Update</h2></div>
+	<div>
+		<p>
+			<span>Make sure to check followings before update new firmware:</span></br></br>
+			<span> * Prepare the bin file for upload </span></br></br>
+			<span> * Module should be connected to local network(Recommended)</span></br></br>
+			<span> * User's browsing device (such as mobile, laptop, iPad, etc.) should be in the same network with the module</span></br></br>
+		</p>
+	</div>
+	<div>
+		<form method='POST' action='/update' enctype='multipart/form-data'>
+			<table>
+				<tr>
+					<td>
+						<input id="file" type='file' name='update'>
+					</td>
+					<td>
+						<input type="submit" value="Update">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>	
+</html>

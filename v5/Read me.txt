@@ -1,0 +1,5 @@
+
+This version of WiFi Manager includes:
+
+- System file editor added : provide an interface (base on ACE open source editor) to manage files stored on ESP8266 spiffs system
+- Various improvement on the interface applied.
