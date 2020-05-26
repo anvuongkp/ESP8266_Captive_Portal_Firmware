@@ -28,7 +28,7 @@ created "data" folder. Following files should be presented in working project fo
 data folder (auto created), node_modules (auto created), html folder, package.json, gulp.js, arduino project file,
 
 
-#####note:
+##### note:
 
 * all command run in window command line and cd to working folder, in this
 case it is home-automation
@@ -38,7 +38,7 @@ PATH = %PATH%;%APPDATA%\npm or re-install node.js and repeat all above steps
 
 * in gulpfile.js, *.html syntax will not be recognized but *.htm, this error can causing "data" folder cannot be created.
 
-###User Manual
+### User Manual
 
 - Server always spinned up when module start
 
